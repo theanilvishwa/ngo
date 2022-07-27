@@ -1,0 +1,83 @@
+create database oshi;
+user oshi;
+create table oshi_admin(
+    id int auto_increment primary key,
+    username varchar(50),
+    password varchar(50),
+    dt timestamp
+);
+
+
+insert into oshi_admin(username,password)values('oshi','oshi');
+
+create table about(
+    id int auto_increment primary key,
+    heading1 varchar(100),
+    content1 text,
+    img1 varchar(100),
+    heading2 varchar(100),
+    content2 text,
+    img2 varchar(100),
+    heading3 varchar(100),
+    content3 text,
+    img3 varchar(100),
+    heading4 varchar(100),
+    content4 text,
+    img4 varchar(100),
+    heading5 varchar(100),
+    content5 text,
+    img5 varchar(100),
+    dt timestamp
+);
+
+
+create table portfolio(
+    id int auto_increment primary key,
+    heading varchar(500),
+    title text,
+    img varchar(255),
+    link varchar(500),
+    dt timestamp
+);
+
+
+
+create table paymentInfo(
+    id int auto_increment primary key,
+    name varchar(50),
+    amount int,
+    payment_status varchar(50),
+    payment_id varchar(50),
+    dt timestamp 
+);
+
+create table paymentDetailCompaign(
+    id int auto_increment primary key,
+    name varchar(50),
+    phone varchar(255),
+    email varchar(255),
+    address varchar(255),
+    amount int,
+    payment_status varchar(50),
+    payment_id varchar(50),
+    dt timestamp 
+);
+
+
+create table compaign(
+    id int auto_increment primary key,
+    heading varchar(500),
+    content text,
+    amount varchar(255),
+    img varchar(255),
+    link varchar(500),
+    startdate varchar(255),
+    enddate varchar(255),
+    dt timestamp
+);
+
+
+
+
+
+
